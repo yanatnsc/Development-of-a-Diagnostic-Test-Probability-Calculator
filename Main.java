@@ -72,9 +72,7 @@ public class Main {
     }
 
     // Method to calculate probability of having the disease given a negative test result
-    public static double
-
-    {
+    public static double probabilityDiseaseGivenNegative(double prevalence, double sensitivity, double specificity) {
         double pDisease = prevalence;
         double pTestNegativeGivenDisease = 1 - sensitivity;
         double pTestNegativeGivenNoDisease = specificity;
